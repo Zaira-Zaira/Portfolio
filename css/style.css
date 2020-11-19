@@ -1,0 +1,702 @@
+/*reset css*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@100&family=Rambla&display=swap');
+html{
+font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    }
+               
+body{
+    font:1.6rem sans-serif;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+                                    
+h1,ul,li, h2, h3, span, p, img{
+    margin: 0;
+    padding: 0;
+}
+header{
+    /* background-color: #f2e9e4; */
+    background-color: #ebfffa;
+    margin-top: -1.0rem;
+    width: 100%;
+}
+.navbarbtn{
+    cursor: pointer;
+    padding:1.5rem;
+    font-size: 2.7rem;
+}
+ul{
+    font-size: 1.9rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 70rem;   
+    line-height: 1.7;
+    text-align: center;
+    width: 100%;
+}
+ul > li{
+    text-align: left;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+.navbarLinks{
+    /* background-color: #735d78; */
+    background-color: #6387b9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-100%);
+    height: 100vh;
+    width: 100%;
+    transition: transform 0.5s ease-in;
+    left: 0;
+}
+.navbarLinks > li{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+.navbarLinks li a{
+     color:#fafafa;
+     opacity: 0.5;
+     transition: opacity 0.2s ease-in;
+}
+.navbarLinks li a:hover{
+    opacity: 0.8;
+}
+.navActive{
+    transform: translateX(0%);
+}
+h1{
+    padding: 90px 0 10px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+}
+
+#about{
+    background-color:  #ebfffa;
+}
+
+.whoIAm{
+    max-width: 45rem;
+    font-size: 2.4rem;
+    line-height: 2.0rem;
+    letter-spacing: 0.01rem;
+    margin: 0 auto;
+    background-color: #ebfffa;
+}
+figure{
+    width: 100%;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    text-align: center;
+}
+.myPhoto{
+    /* width: 100%; */
+    max-width: 35rem;
+    border:2px solid  transparent;
+    box-shadow: 0 0 8px rgb(99, 98, 98);
+    padding: 0.5rem;
+    background-color:rgb(226, 222, 222);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.introductionAboutMe{
+    font-size: 1.8rem;
+    line-height: 2.0;
+    text-align: justify;
+    max-width: 85rem;
+    padding: 2.0rem;
+}
+h2{
+    padding: 1.0rem 0 1.9rem 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    font-family: 'AudioWide', sans-serif;
+    background-color: #afa6ae;
+    margin: 0 auto;
+    max-width: 152rem;
+    width: 100%;
+    border-radius: 1.0rem;
+    color: #001845;
+}
+
+#skills{
+    /* background-color: #e5e5e5; */
+    background-color:#e7f0fd;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.0rem;
+}
+.listCompetences{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+    padding: 2.0rem;
+}
+.listCompetences > li{
+    font-size: 12.0rem;
+    display:flex;
+}
+.listCompetences  li > i {
+  scale:1.25;
+  transition: all .3s ease-in-out;
+}
+.listCompetences li > i:hover{
+    scale: 1;
+}
+#experiences{
+    background-color: #fff6fa;
+    /* color: #212529; */
+    color: #001233;
+}
+.desc{
+    padding-left:5.0rem;
+    color:#6d6875;
+}
+#formation{
+    /* background-color: #c6def1; */
+    background-color: #f5f9ff;
+    color:#001233;
+}
+.dates{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+    padding: 0.5rem;
+}
+#formation > .listFormations, #experiences > .listExperiences{
+    padding: 1.5rem;
+}
+
+.listExperiences, .listFormations, .listLoisirs, .listSoftware, #contact{
+    text-align: justify;
+    width: 90%;
+    line-height: 2.0;
+    justify-content: center;
+    align-items: center;
+}
+#software{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #ffff; */
+    /* background-color: #d6cadf; */
+    background-color: #ecfffb;
+ }
+ #software > img {
+    max-width: 30rem;
+    max-height: 30rem;
+    width: 100%;
+    margin: 2.0rem;
+    scale: 1;
+    transition: scale 0.45s ease-in;
+ }
+
+ #software > img:hover{
+   scale: 1.3;
+ }
+ #loisirs{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #e8f1f2;
+}
+#loisirs > img{
+    width: 100%;
+    max-width: 35rem;
+    height: 30rem;
+    margin: 1.5rem;
+    transition: all 0.35s ease-in;
+}
+#loisirs > img:hover{
+    /* filter: blur(50%); */
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+#portfolio{
+    width: 100%;
+    height: 100vh;
+    background-color: #dde8ff;
+}
+
+
+#contact{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 150rem;
+}
+#contact > .info{
+    color: rgb(248, 245, 239);
+    
+}
+
+#contact > ul li{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: #fafafa;
+    margin-left: 2.5rem;
+}
+.socialMedias{
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   display: flex;
+   margin: 1.5rem;
+}
+.socialMedias > li{
+    font-size: 3.0rem;
+    transition: all 1s ease-in-out;
+    scale: 1;
+}
+.socialMedias li > i{
+    scale: 1;
+}
+
+.socialMedias li > i:hover{
+   scale: 1.3;
+   transform: rotate(15deg);
+}
+
+h3{
+    font-size: 2.5rem;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+}
+
+.navAppear{
+    transform: translateX(0rem);
+}
+
+
+
+            /*********************************************PORTFOLIO Animation 3D******************************************************************/
+#portfolio{
+    width: 100%;
+    height: 100vh;
+}
+.myProjects{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dde8ff;
+}
+.myProjects > img{
+    width: 100%;
+    height: 25rem;
+    max-width: 35rem;
+    margin: 1.0rem;
+    /* filter:grayscale(80%); */
+    /* transition: filter 225ms ease-in; */
+    border-radius: 1.0rem;
+    cursor: pointer;
+}
+/* .myProjects > img:hover{
+    filter: grayscale(0%);
+} */
+.myProjects{
+    width: 100%;
+    margin: 0 auto;
+}
+section{
+    background-color:rgb(231, 189, 247);
+}
+.wrap {
+    perspective: 800px;
+    perspective-origin: 50% 100px;
+}
+.cube {
+    position: relative;
+    z-index: 1;
+    width: 200px;
+    transform-style: preserve-3d;
+    margin:10.000rem auto;
+}
+.cube section img{
+    display: block;
+    width: 100%;
+}
+.back {
+    transform: translateZ(-100px) rotateY(180deg)scale(1);
+    transition-duration: 0.5s;
+}
+.right{
+    transform: rotateY(-270deg) translateX(100px) scale(1);
+    transform-origin: top right;
+    transition-duration: 0.5s;
+}
+.left {
+    transform: rotateY(270deg) translateX(-100px) scale(1);
+    transform-origin: center left;
+    transition-duration: 0.5s;
+}
+.top {
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top center;
+}
+.bottom {
+    transform: rotateX(-90deg)translateY(100px);
+    transform-origin: bottom center;
+}
+.front {
+    transform: translateZ(100px) scale(1);
+    transition-duration: 0.5s;
+}
+.frontImage{
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+}
+.cube {
+    animation: spin 9s infinite linear;
+}
+
+/*animation navlinks*/
+
+
+@keyframes navbarLinkFade{
+    from{
+          opacity: 0;
+          transform: translateX(-5rem);
+    }
+    to{
+          opacity: 1;
+          transform: translateX(0rem);
+    }
+}
+            /*aniamtion du cube */
+            
+@keyframes spin {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.cube section{
+    position: absolute;
+    z-index: 2;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;
+                opacity: 0.9;
+                box-shadow: 0 0 10px yellow;
+            }
+            #animations ul li >img{
+                position:relative;
+                display:inline-block;
+                width: 200px;
+                transition-duration: 0.5s;
+                transform: scale(1) rotate(0deg);
+                z-index: 0;
+                cursor: pointer;
+            }
+            
+            #animations ul li:first-child:hover{
+                animation: firstAnimation 0.7s linear infinite;
+            }
+            #animations ul li:nth-child(2):hover{
+                animation: secondAnimation 0.8s linear 4 alternate;
+            }
+            slide_1{
+                left:0
+            }
+            slide_2{
+                left:-40rem
+            }
+            slide_3{
+                left:-80rem
+            }
+            slide_4{
+                left:-100rem
+            }
+            @keyframes slideIn{
+                0%{
+                    left:0;
+                }
+                22%{
+                    left:0;
+                }
+                33%{
+                    left:-40rem;
+                }
+                65%{
+                    left:-80rem;
+                }
+                90%{
+                    left:-100rem;
+                }
+            }
+            
+            @keyframes firstAnimation{
+                 0%{
+                     transform:rotateX(0deg);
+                 }
+                 50%{
+                     transform: rotateX(90deg);
+                     opacity:0.5
+                 }
+                 100%{
+                     transform: scale(1) rotate(360deg);
+                 }
+            }
+            
+            @keyframes secondAnimation{
+                from{
+                    transform: rotateZ(0deg);
+                }
+                to{
+                    transform: scale(1) rotateZ(360deg);
+                }
+            }
+            footer{
+                background-color: #222;
+                text-align: center;
+            }
+            footer p{
+                color:#fff;
+                line-height: 3.0rem;
+            }
+            
+            /*partie survol sur le cube */
+            .front:hover{
+                transform: translateZ(125px) scale(1.5) rotate(360deg);
+                opacity:1;
+                cursor: pointer;
+            }
+            .left:hover{
+                transform: rotateY(270deg) translateZ(50px) translateX(-100px) scale(1.5);
+                transform-origin: center left;
+                opacity: 1;
+                cursor: pointer;
+            }
+            .right:hover{
+                transform: rotateY(-270deg) translateX(100px) translateZ(50px) scale(1.5);
+                transform-origin: center right;
+                opacity: 1;
+                cursor: pointer;
+            }
+            /* .back:hover{
+                transform: translateX(150px);
+                transform-origin: center center;
+                opacity: 1;
+                cursor: pointer;
+            } */
+@media screen and (max-width:1000px){
+    .section_1 ul li{
+    display: flex;
+    flex-direction: column;
+}
+}
+            
+
+                                  /*******************FIN ANIMATION 3D***************************/
+#contact{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 150rem;
+}
+ #contact > .info{
+    color: rgb(248, 245, 239);
+                                    
+}
+                                
+#contact > ul li{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: #fafafa;
+    margin-left: 2.5rem;
+}
+.socialMedias{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin: 1.5rem;
+}
+.socialMedias > li{
+    font-size: 3.0rem;
+}
+                                
+
+                   /********************************************Galerie PHOTO************************************************/   
+
+#galerie_photo{
+    max-width: 90rem;
+    position: relative;
+    overflow: hidden;
+    height: 40rem;
+    box-shadow: 0 0 1.8rem plum;
+    }
+#galerie_photo .slide_show{
+    position: absolute;
+    top:0;
+    left:0;
+    width:47rem;
+    height: 40rem;
+   animation: slideIn 8s linear infinite;
+}
+                
+#galerie_photo .slide_show:hover{
+    animation-play-state: paused;
+    filter:grayscale(100%);
+    cursor: pointer;
+}
+
+                @keyframes slideIn{
+                    0%{
+                        left:0;
+                    }
+                    22%{
+                        left:0;
+                    }
+                    33%{
+                        left:-40rem;
+                    }
+                    65%{
+                        left:-80rem;
+                    }
+                    90%{
+                        left:-100rem;
+                    }
+                }
+
+
+@media screen and (min-width: 1200px) {
+    body{
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    .navbar{
+        height: 10vh;
+        width: 100%;
+    }
+    .navbar > i{
+        display: none;
+    }
+    .navbarLinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        max-width: 150rem;
+    }
+    h1{
+        font-size: 6.0rem;
+    }
+    .whoIAm{
+        font-size: 4.0rem;
+        line-height: 2.0;
+        max-width:100rem;
+    }
+    .myPhoto{
+       float:left;
+       margin-right: 4.0rem;
+    }
+   
+    #about{
+       height: 80vh;
+       width: 100%;
+    }
+
+    figure{
+       max-width: 100rem;
+       margin: 8rem auto;
+    }
+    .listCompetences{
+        display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-gap: 2.5rem;
+       padding-bottom: 2.5rem;
+   }
+   #contact{
+      /* padding: 2.5rem; */
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-width: 160rem;
+   }
+   .personalInfo{
+       float: left;
+       margin-left: 2.5rem;
+   }
+   .socialMedias{
+       padding-left: 1.0rem;
+   }
+   #software > img{
+       max-width: 25rem;
+       margin: 2.5rem;
+   }
+   .listCompetences{
+      display: flex;
+      justify-content: space-around;
+   }
+   .listCompetences > li{
+       padding: 2.5rem;
+   }
+   #loisirs > img{
+       max-width: 30rem;
+   }
+   .myProjects > img{
+    filter: grayscale(80%);
+    transition: filter 225ms ease-in; 
+   }
+   .myProjects > img:hover{
+    filter: grayscale(0%);
+}
+
+}
+
+
+
+
+

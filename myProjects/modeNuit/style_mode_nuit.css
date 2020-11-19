@@ -1,0 +1,74 @@
+body{
+    background: #eee;
+    margin: 0;
+    transition: 0.2s linear;
+    font-family: 'Dosis', sans-serif;
+    color:#333;
+}
+main{
+    margin: 3rem auto 0;
+    width: 550px;
+    background: rgb(116,178,189);
+    padding: 1rem 2rem 2rem;
+    box-shadow: 1px 2px 6px #333;
+    border-radius: 4px;
+}
+.img{
+    background: url(../image/animations_03.jpg) no-repeat 100%  / cover;
+    height: 280px;
+    border-radius: 4px;
+}
+.toggle{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+.checkbox{
+    display: none;   /*on cache le petit caré, il existe, mais on ne voie pas*/
+}
+.label{
+    height:26px;
+    width: 50px;
+    background:  rgb(182,182,182);
+    padding: 5px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px #333;
+}
+.label .ball{
+    background: #eeee;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top:5px;
+    left:6px;
+    transform: translateX(0);
+    transition: 0.4s cubic-bezier(.45, -1.12, .35, 1.78);
+}
+.checkbox:checked + label .ball{  /*une fois que c'est checké on va agir sur label et ball*/
+    transform: translateX(29px);
+    
+}
+.fa-moon{
+    color:#333;
+}
+/*dark_mode*/
+.dark{
+    background: #333;
+}
+.dark main{   /* il faut ajouter une class dark avant tous eles elements pour que notre dark mode */
+    background: #09FBBA;
+}
+.dark .label{
+    box-shadow: 2px 1px 1px #09FBBA;
+    background: #8888;
+}
+.dark .ball{
+ background: #09FBBA;
+}
