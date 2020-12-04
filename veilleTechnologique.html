@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veille technologique</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/veilleTechno.css" type="text/css">
 </head>
 <body>
+
+    <header>
+         <nav>
+             <ul>
+                 <li>Cloud Computing</li>
+                 <li>Cloud Services</li>
+                 <li>Evolution</li>
+                 <li>Gestion des versions</li>
+             </ul>
+         </nav>
+    </header>
+
+    <main>
+        <section id="container">
+        <section id="galerie">
+        <h2>Cloud Computing</h2>
+        <section id="section"> 
+        <div class="slide_show" role="img">
+             <img src="https://networkencyclopedia.com/wp-content/uploads/2019/09/cloud-computing.png" alt="kirk" class="slide_1">
+             <img src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/11/Cloud-computing-features.jpg" alt="spock" class="slide_2">
+             <img src="https://www.xorlogics.com/wp-content/uploads/2017/07/Cloud-computing.png" alt="ceckov" class="slide_3">
+             <img src="https://intellipaat.com/blog/wp-content/uploads/2016/05/Cloud-Computing-Models-AWS-2.jpg" alt="" class="slide_4">
+        </div>
+        </section>
+    </section>
+    </section>
+
+
+    <section id="introduction">
+
+             
+                <h2>Qu'est-ce que est Cloud Computing?</h2>
+                <p>Le cloud computing en  français l'informatique en nuage  correspond à l’accès à des services informatiques (serveurs, stockage, mise en réseau, logiciels) via Internet  à partir d’un fournisseur.
+ 
+                 Les principaux services proposés en cloud computing sont le SaaS (Software as a Service), le PaaS (Platform as a Service) et le IaaS (Infrastructure as a Service) ou le MBaaS (Mobile Backend as a Service). Généralement sur trois niveaux, le cloud public — accessible par Internet —, le cloud d'entreprise ou privé — accessible uniquement sur un réseau privé —, le cloud intermédiaire ou hybride — qui est un mix entre le cloud public et le cloud privé.Ce nom est associé au symbole en forme de nuage (« cloud ») représentant parfois l'Internet dans les schémas des réseaux informatiques5. Un service de cloud décentralisé est un modèle de stockage en réseau12 suivant lequel les données sont stockées sur de multiples machines dénommées « nœuds » et hébergées par les participants coopérant au cloud. Contrairement au modèle traditionnel centralisé, le service de cloud décentralisé n’utilise pas directement de serveurs dédiés pour le stockage de données, éliminant de ce fait de coûteux investissements en matériel. Chaque nœud utilise un logiciel permettant de mettre à disposition de l’espace de stockage.
+ 
+                 Les données peuvent être découpées et chiffrées avant d’être envoyées vers le cloud décentralisé. Elles sont ensuite distribuées aux nœuds du système suivant des algorithmes de balance de charge, de distribution géographique </p>
+            
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg" alt="5G dark">
+            </section>
+
+            <section id="serverless">
+                <h2>Iaas</h2>
+                <p>IaaS (infrastructure as a service)En français infrastructure en tant que service. C'est le service de plus bas niveau. Il consiste à offrir un accès à un parc informatique virtualisé. Des machines virtuelles sur lesquelles le consommateur peut installer un système d'exploitation et des applications.
+                PaaS (platform as a service). Dans ce type de service le système d'exploitation et les outils d'infrastructure sont sous la responsabilité du fournisseur. Le consommateur a le contrôle des applications et peut ajouter ses propres outils.
+                SaaS (software as a service)Dans ce type de service, des applications sont mises à la disposition des consommateurs. Les applications peuvent être manipulées à l'aide d'un navigateur Web ou installées de façon locative sur un PC, et le consommateur n'a pas à se soucier d'effectuer des mises à jour, d'ajouter des patches de sécurité et d'assurer la disponibilité du service.</p>
+                <img src="https://www.uniprint.net/wp-content/uploads/2017/05/Cloud-service-models-diagram.png" alt="cloud services Iaas Paas Saas">
+            </section>
+
+
+     <section id="histoire">
+              <h2>Histoire et évolution du Cloud Computing</h2>  
+              <p> Les principes sous-jacents au cloud computing remontent aux années 1950. Au début des années 2000 sont apparus des hébergeurs web capables d'héberger des applications dans leurs locaux informatiques. En particulier, Google et Amazon ont simultanément repris le terme 'cloud computing' en 2006. L’informatique sans serveur a gagné en popularité en 2014 quand AWS a dévoilé Lambda et son projet open source Firecracker. Actuellement, les solutions disponibles ont tendance à enfermer les clients dans un fournisseur de cloud particulier. Les logiciels libres sont de plus en plus populaires auprès des entreprises. Jusqu’à 60% des DSI récemment consultées par Black Duck Software utilisent des logiciels open source</p>
+          
+                <img src="https://www.bcs.org/media/2416/cloud-timeline-1960-2005.jpg" alt="graphique d'evolution du cloud computing">
+    </section> 
+
+ 
+    <section id="versionning">
+        <section>
+            <h2>Outils de suivi et de gestion de versions </h2>
+            <h3>GIT</h3>
+             <p>Git est un logiciel de gestion de versions décentralisé. C'est un logiciel libre créé par Linus Torvalds, auteur du noyau Linux. Git ne repose pas sur un serveur centralisé, mais il utilise un système de connexion pair à pair. Le code informatique développé est stocké non seulement sur l’ordinateur de chaque contributeur du projet, mais il peut également l'être sur un serveur dédié. C'est un outil de bas niveau, qui se veut simple et performant, dont la principale tâche est de gérer l'évolution du contenu d'une arborescence. Git indexe les fichiers d'après leur somme de contrôle calculée avec la fonction de hachage SHA-1. Quand un fichier n'est pas modifié, la somme de contrôle ne change pas et le fichier n'est stocké qu'une seule fois. En revanche, si le fichier est modifié, les deux versions sont stockées sur le disque. Dès le début, Git a été pensé dans le but de fonctionner de façon décentralisée, c'est d'ailleurs l'une des clefs de son succès. Les serveurs Git utilisent par défaut le port 9418 pour le protocole spécifique à Git. Les protocoles HTTP, HTTPS et SSH (et leurs ports standards) peuvent aussi être utilisés. Linus Torvalds prononce [ˈɡɪt] avec un ɡ dur14.
+               Le magazine PC World nous apprend que « quand on lui a demandé pourquoi il avait appelé son logiciel “git”, qui est à peu près l'équivalent de “connard” en argot britannique15,16, Linus Torvalds a répondu “je ne suis qu'un sale égocentrique, donc j'appelle tous mes projets d'après ma propre personne. D'abord Linux, puis Git.”17 ». </p>
+            <p>Les outils tels que Jira, payant, ou Bugzilla, gratuit et open source, apportent une meilleure visibilité sur l’état d’avancement de vos projets et facilitent la collaboration des équipes distribuées. Les logiciels de gestion de versions sont eux totalement incontournables, par exemple Git. Le fait d’établir un référentiel unique – une « single source of truth» – pour votre équipe permet d’établir un suivi précis des changements effectués dans le code source, ce qui sera essentiel lorsqu’il s’agira de faire un petit saut dans le passé à la faveur d’un rollback. Il existe différentes méthodes de déploiement : canary release, BlueGreen, tests A/B. En mode canary release, la mise à jour est poussée vers un petit groupe d’utilisateurs qui vont la tester. Si tout va bien, elle sera déployée. Sinon, le processus reprend à l’étape précédente. </p>
+            <h3>GitLab CI </h3>
+            <p>GitLab CI est un outil d’intégration continue intégré à GitLab. Il sert à la fois à héberger du code et à développer des référentiels git. Initialement publié en tant que projet autonome, GitLab CI a été intégré dans le logiciel principal GitLab avec la sortie de GitLab 8.0 en 2015. Gitlab CI est donc une composante de GitLab programmée en Ruby et en Go. Il supporte la livraison et le déploiement en continu. Il est open core et peut être auto-hébergé ou hébergé sur le Cloud. Dans GitLab CI, le processus CI/CD est défini dans un fichier du référentiel de code grâce à des instructions de configuration en YAML. Le travail à effectuer est ensuite envoyé aux machines appelées «coureurs», faciles à configurer et pouvant de plus être provisionnées sur de nombreux systèmes d’exploitation. La fonctionnalité intégrée permet aux utilisateurs de GitLab de configurer un environnement CI/CD sans devoir installer – ni apprendre à utiliser – un outil supplémentaire. GitLab possède, entre autres, une fonctionnalité appelée Auto DevOps qui permet, pour les projets les plus simples, de construire automatiquement un pipeline avec plusieurs tests intégrés.</p>
+            
+            <h3>Jenkins </h3>
+            <p>Jenkins (https://jenkins.io/) est un outil open source adapté au DevOps avec une dimension collaborative. Il est écrit en Java et publié sous licence MIT. C’est l’un des tout premiers serveurs d’intégration continue en Open Source qui soit apparu et il reste encore l’un des plus utilisés à l’heure actuelle. Jenkins sert principalement de cadre d’automatisation avec une grande partie de la logique implémentée via une bibliothèque de plugins. Tout est géré par des plugins, de l’écoute de points d’ancrage web ou l’observation de référentiels jusqu’à la création d’environnements de build et de prise en charge linguistique. Jenkins Evergreen simplifie encore ce processus en fournissant des configurations Jenkins prédéfinies basées sur différents cas d’utilisation </p>
+            <h3>CloudBees </h3>
+        </section>
+            <img src="https://user-images.githubusercontent.com/4660275/34914739-d929d7dc-f929-11e7-945f-daf17005a767.png" alt="versionning applications and popularity">
+      
+</section>
+    </main>
     
 </body>
 </html>

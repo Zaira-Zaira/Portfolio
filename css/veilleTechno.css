@@ -1,0 +1,250 @@
+/*reset css*/
+html{
+    /* background: #222 url("https://www.revue-reflets.org/wp-content/uploads/2019/09/5G.jpg")no-repeat fixed center center / cover; */
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+nav, ul, li{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+h1,h2,h3,figure,p,ul,ol{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    list-style: none;
+}
+/*theme*/
+header h1, #galerie h2{
+    background-color: #222;
+    line-height: 6.0rem;
+    color:#fafafa;
+    text-align: center;
+}
+h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: rgb(207, 204, 204);
+    border-radius: 10rem;
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    color: blue;
+    font-weight: 400;
+}
+nav{
+    background-color: lightslategray;
+    height: 8.0rem;
+    width: 100%;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+nav ul > li{
+    color: rgb(5, 3, 117);
+    font-size: 2.3rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.9;
+    transition:  all 250ms;
+    cursor: pointer;
+    padding: 0.8rem;
+    opacity: 0.8;
+}
+nav ul > li:hover{
+    opacity: 1;
+    background-color: rgb(132, 148, 163);
+}
+#container{
+    background: #222 url("https://cdn.mos.cms.futurecdn.net/XtJyaRJPmBf4AcHwWnCGZa-1200-80.jpg")no-repeat fixed center center / cover;
+    width: 100%;
+    height: 80vh;
+}
+#galerie{
+    max-width:46rem;
+    margin:0rem auto;
+    padding:3.0rem;
+}
+#galerie h2{
+    line-height: 4.5rem;
+}
+div{
+    display: flex;
+}
+div img{
+    display:flex;
+    width: 100%;
+}
+#section{/*on a fait le diapo sans le devilement avec une image */
+    position: relative;
+    overflow: hidden; /*pour faire un masque dans le diapo*/
+    height: 40rem;
+    box-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+}
+#section .slide_show{
+    position: absolute;/*elements a l'interieur ne bouge pas*/
+    top:0;
+    left:0;
+    width:40rem;
+    height: 40rem;
+    /*animation, faire le defilement de diapos*/
+    animation: slideIn 8s linear infinite;
+}
+/*stoper animation par le survol de la souris*/
+#section .slide_show:hover{
+    animation-play-state: paused; /*animation pour stoper */
+    filter:grayscale(100%); /*mettre en gris */
+    cursor: pointer;
+}
+#introduction, #histoire{
+    width: 100%;
+    margin: 2.5rem auto;
+}
+#introduction  > h2, #histoire > h2, #serverless >h2, #versionning > h2, #versionning section > h2{
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 2.5rem;
+   color: rgb(4, 4, 99);
+   font-weight: 600;
+}
+#introduction  > p, #histoire > p{
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
+    float: left;
+    max-width: 75rem;
+    width: 100%;
+    justify-content: center;
+    padding-left: 1.5rem;
+}
+#introduction > img{
+    width: 100%;
+    max-width: 60rem;
+    margin-left: 4.0rem;
+    margin-top: 1.0rem;
+}
+#histoire > p{
+    float: right;
+    max-width: 70rem;
+    padding-right: 5.0rem;
+}
+#histoire > img{
+    width: 100%;
+    max-width: 70rem;
+}
+#serverless >p{
+    width: 100%;
+    max-width: 75rem;
+    float: right;
+}
+#serverless > img{
+   width: 100%;
+   max-width: 60rem;
+}
+#versionning {
+display: flex;
+justify-content: space-around;
+}
+
+#versionning > section{
+    max-width: 90rem;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+#versionning  > img{
+    width: 100%;
+    max-width: 50rem;
+    height: 40rem;
+    margin-top: 15.0rem;
+}
+
+
+
+
+
+/*animation diapo*/
+.slide_1{/*premiere image */
+    left:0;
+}
+.slide_2{/*2 image plus bas */
+    left:-40rem;
+}
+.slide_3{/*image 3 _40+_40=-80rem*/
+    left:-80rem;
+}
+.slide_4{
+    left:-120rem
+}
+@keyframes slideIn{
+    0%{
+        left:0;
+    }
+    22%{
+        left:0;
+    }
+    33%{
+        left:-40rem;
+    }
+    45%{
+        left:-40rem; 
+    }
+    66%{
+        left:-80rem; 
+    }
+    75%{
+        left:-80rem; 
+    }
+    83%{
+        left:-120rem;
+    }
+    93%{
+        left: -120rem;
+    }
+
+}
+
+@media screen and (max-width:740px){
+    body{
+    overflow-x: hidden;
+    }
+    #container{
+        display: none;
+    }
+    #introduction > img{
+        margin-left: 0;
+    }
+    #introduction  > p, #histoire > p{
+        padding-left: 0;
+    }
+    #versionning{
+        display: flex;
+        flex-direction: column;
+    }
+    #versionning  > img{
+        margin-top: 0;
+    }
+    p{
+        text-align: justify;
+    }
+    #histoire > p{
+        padding-right: 0;
+        padding-bottom: 1.5rem;
+    }
+    #serverless >p{
+        padding-bottom: 1.5rem;
+    }
+}
+
