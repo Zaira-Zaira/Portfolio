@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPE JAVA </title>
+    <link rel="stylesheet" href="css/stage.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>PPE - Gestion du personnel des ligues</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Presentation du projet</h2>
+            <p>Un des responsables de la M2L, utilise une application pour gérer les employés des ligues. Cette application, très simple, n’existe qu’en ligne de commande et est mono-utilisateur. Nous souhaiterions désigner un administrateur par ligue et lui confier la tâche de recenser les employés de sa ligue.</p>
+        </section>
+
+        <section id="besoins">
+            <h2>Spécification du besoin</h2>
+            <ul>
+                <li>Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture. </li>
+                <li>Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau.</li>
+                <li>Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande. </li>
+                <li>L’application doit être rendue multi-utilisateurs grace à l’utilisation d’une base de données. </li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section id="iteration_1">
+              <h3>Modélisation d'une base de données avec un MCD</h3>
+              <p>Ci-dessous la documentation pour ce baser lors de la création de MCD</p>
+              <h4>I. Class employe</h4>
+              <img src="./asset/ppe_employe.png" alt="class employe methods" class="classemploye">
+              <h4>II. Class Ligue</h4>
+               <img src="./asset/class_ligue.png" alt="class ligue" class="ligue">
+              <h4>Dictionnaire des données et MCD réaliser lors de projet</h4>
+              <img src="./asset/mcd_ppe.png" alt="mcd" class="mcd">
+              <p>Entité Employe nous permets d'enregistrer dans une base de données le nom, le prénom, le mail, mot de passe, date d'arrivée et date de départ de l'employe. Ainsi dans le but de pouvoir attribuer des administrateurs et des superadministrateurs on ajoute dans entité les booleans employé estAdmin et estSuperAdmin qui vont nous permettre de savoir si l'employe et admin d'une ligue.</p>
+        </section>
+
+        <section id="test_unitaires">
+            <h3>Vérification du fonctionnement de l'application grâce à des tests unitaires</h3>
+            <p>Notre but est de vérifier le bon fonctionnement de l'application. Pour cela on fait des tests unitaires pour les classes Employe, Ligues et la géstion des dates.</p>
+            <img src="./asset//tests_unit_employe.png" alt="code tests unitaires" class="tests">
+            <p>La première methode nous retourne le nom de l'employe. Pour ce faire on ajoute une ligue "nomLigue". La méthode setNom nous permet de changer le nom de l'employe.</p>
+        </section>
+
+        <section>
+            <h3>Gestion de la date de départ et celle d'arrivée de chaque employe</h3>
+            <p>Afin de permettre à chaque employe de saisir et d'enregistrer sa date d'arrivée et eventuellement la date de départ nous allons ajouter  dans le contructeur de la class Employe deux variables de type LocaleDate</p>
+            <img src="./asset/construct_employe.png" alt="constructeur de la class employé" class="construct_employe">
+            <p>Il est aussi nécessaire d'ajouter les methodes get et set afin de permettre à l'utilisateur de saisir la date de départ et celle d'arrivée</p>
+            <img src="./asset/dates_employe.png" alt="methodes set et get" class="methods">
+        </section>
+    </main>
+</body>
+</html>
