@@ -106,6 +106,48 @@ figure{
     max-width: 90rem;
     height: 35rem;
 }
+.WorkGroupMainPage, .publications, .newpub, .workGroupUsers, .newPubWithVideo{
+    max-width: 50rem;
+    max-height: 73rem;
+}
+.newPubWithVideo{
+    margin-top: 4.0rem;
+}
+.iteration2{
+    margin: 0 auto;
+}
+.iteration2 > img, .gestionEmployes{
+    max-width: 70rem;
+}
+#iteration3 > p{
+    font-weight: bold;
+}
+#iteration3 > img{
+    width: 100%;
+    max-width: 85rem;
+    padding: 5rem;
+}
+.photoCredentials{
+    width: 100%;
+    max-width: 40rem;
+    max-height: 60rem;
+}
+#interfaceGraphique > p{
+     padding: 5rem 0 5rem 0;
+}
+#rootAdmin > img{
+    width: 100%;
+    max-width: 70rem;
+}
+footer{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+footer > p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width:740px){
     .imagesDNS{

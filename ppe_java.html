@@ -28,32 +28,99 @@
             </ul>
         </section>
 
+
         <section id="iteration_1">
-              <h3>Modélisation d'une base de données avec un MCD</h3>
-              <p>Ci-dessous la documentation pour ce baser lors de la création de MCD</p>
-              <h4>I. Class employe</h4>
-              <img src="./asset/ppe_employe.png" alt="class employe methods" class="classemploye">
-              <h4>II. Class Ligue</h4>
-               <img src="./asset/class_ligue.png" alt="class ligue" class="ligue">
-              <h4>Dictionnaire des données et MCD réaliser lors de projet</h4>
               <img src="./asset/mcd_ppe.png" alt="mcd" class="mcd">
-              <p>Entité Employe nous permets d'enregistrer dans une base de données le nom, le prénom, le mail, mot de passe, date d'arrivée et date de départ de l'employe. Ainsi dans le but de pouvoir attribuer des administrateurs et des superadministrateurs on ajoute dans entité les booleans employé estAdmin et estSuperAdmin qui vont nous permettre de savoir si l'employe et admin d'une ligue.</p>
         </section>
+
 
         <section id="test_unitaires">
             <h3>Vérification du fonctionnement de l'application grâce à des tests unitaires</h3>
-            <p>Notre but est de vérifier le bon fonctionnement de l'application. Pour cela on fait des tests unitaires pour les classes Employe, Ligues et la géstion des dates.</p>
             <img src="./asset//tests_unit_employe.png" alt="code tests unitaires" class="tests">
-            <p>La première methode nous retourne le nom de l'employe. Pour ce faire on ajoute une ligue "nomLigue". La méthode setNom nous permet de changer le nom de l'employe.</p>
         </section>
+
+
 
         <section>
             <h3>Gestion de la date de départ et celle d'arrivée de chaque employe</h3>
-            <p>Afin de permettre à chaque employe de saisir et d'enregistrer sa date d'arrivée et eventuellement la date de départ nous allons ajouter  dans le contructeur de la class Employe deux variables de type LocaleDate</p>
             <img src="./asset/construct_employe.png" alt="constructeur de la class employé" class="construct_employe">
-            <p>Il est aussi nécessaire d'ajouter les methodes get et set afin de permettre à l'utilisateur de saisir la date de départ et celle d'arrivée</p>
             <img src="./asset/dates_employe.png" alt="methodes set et get" class="methods">
         </section>
+
+
+
+        <section>
+            <h3>Représentation des menus du dialogue en ligne de commande avec un arbre heuristique</h3>
+            <figure>
+                <img src="./asset/arbre_heuristique.png" alt="arbre heuristique des menus du dialogue">
+                <figcaption>
+                    <p>Une carte heuristique, encore appelée Mind Map, topogramme ou carte mentale, est un graphique représentant des idées, des tâches, des mots, des concepts qui sont liés entre eux autour d'un sujet central.  L'intérêt de la carte heuristique est de pouvoir transformer une longue liste de tâches monotones en une représentation graphique colorée et attractive, plus facilement mémorisable et proposant une organisation claire de ses idées.Logiciel  Freemind a été utilisé pour créer cette carte heuristique</p>
+                </figcaption>
+            </figure>
+        </section>
+
+
+        <section>
+            <h2>Iteration 2</h2>
+             <h3>Création de la base de données</h3>
+             <figure>
+                <img src="./asset/base_de_donnees.png" alt="script de création de la base de données">
+                <figcaption>
+                    <p>Voici le script  de création de la base de données</p>
+                </figcaption>
+            </figure>
+        </section>
+
+
+        <section class="iteration2">
+            <h3>Gestion des dates dans le dialogue en ligne de commande </h3>
+            <img src="./asset/gestion_dates_employe.png" alt="constructeur de la class EmployeConsole">
+            <p>Les methodes changeDateArrivee, changeDateDepart les méthodes qui prennent en paramètres un  Employé  et dates de type LocalDate</p>
+            <img src="./asset/gestion_dates_2.png" alt="methodes date d'arrivee et date de depart">
+        </section>
+
+
+
+        <section>
+            <h3>Dans le dialogue en ligne de commande, un employé doit être selectionné avant que l’on puisse choisir de modifier ou de supprimer</h3>
+            </p>
+            <img class="gestionEmployes" src="./asset/select_employe.png" alt="méthodes gérerEmploye et sélectionnerEmploye">
+            <p>Voici le résultat en ligne de commande :</p>
+            <img src="./asset/commandLine.png" alt="commandLine menu Employés">
+        </section>
+
+        <section id="iteration3">
+            <h2>Iteration 3</h2>
+            <h3>Création d’une classe fille de Passerelle permettant de gérer la connexion à la base de données avec JDBC </h3>
+            <img src="./asset/jdbc.png" alt="fichier jdbc.java">
+            <img src="./asset/update_employe.png" alt="update employe in database">
+            <p>Class Credentials permettant gérer la connexion à la base de données </p>
+            <img src="./asset/Credentials.png" alt=" fichier credentials java " class="photoCredentials">
+        </section>
+
+        <section id="interfaceGraphique">
+            <h3>Modélisation de l’interface graphique avec des maquettes. </h3>
+            <img src="./asset/mon_compte.png" alt="my account page">
+            <img src="./asset/list_ligues.png" alt="list ligues  page">
+            <img src="./asset/list_employes.png" alt="list employees page">
+            <img src="./asset/compte_root.png" alt="root account">
+            <img src="./asset/add_employe.png" alt="add employe form">
+            <p><a href="asset/Interface_graphique(2).pdf" download>Télécharger la modélisation de l'interface graphique ici</a></p>
+        </section>
+
+        <!-- <section>
+            <h3>Création d’une interface graphique (Swing ou JavaFx) pour que les administrateurs puissent gérer les ligues. </h3>
+        </section> -->
+
+        <section id="rootAdmin">
+            <h3>Si une ligue n’a pas d’administrateur, c’est automatiquement le root qui devient l’administrateur de la ligue</h3>
+            <img src="./asset/set_admin.png" alt="set administrateur code source">
+        </section>
+
+        <footer>
+            <p>MIT - Khagabanova Zaira - 2021</p>
+        </footer>
+        
     </main>
 </body>
 </html>
