@@ -127,7 +127,7 @@ figure{
     border:2px solid  transparent;
     box-shadow: 0 0 8px  var(--photo-shadow-color);
     margin: 0 auto;
-    clip-path: circle(36.3%);
+    clip-path: circle(36.0%);
 }
 .introductionAboutMe{
     font-size: 1.8rem;
