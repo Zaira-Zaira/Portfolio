@@ -170,6 +170,9 @@ h3::before{
     align-items: center;
     margin-top: -1.8rem;
 }
+.titleSkills, .titleSoftware{
+    z-index: 2;
+}
 .sectionFormationAppear, .veilleTechnoAppear, .sectionMyworkAppear, .loisirsAppear, .sectionAppear, .sectionSkillsAppear, .sectionExperienceAppear, .cubeAppear, .projectsAppear{
     opacity: 0;
     background: 0;
@@ -598,10 +601,6 @@ h4{
    #veilles figure figcaption > a{
     padding: 0.7rem 2.4rem;
    }
-   .listProjects{
-    display: flex;
-    flex-direction: column;
-}
    
 }
 

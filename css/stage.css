@@ -70,14 +70,22 @@ figure{
     text-align: center;
     margin: 3.0rem;
 }
-.taches{
-    background-color: #E5E5FF;
+#besoins ul{
+    margin-bottom: 2rem;
+}
+#besoins ul li{
+text-align: left;
+}
+.mcd{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .kibana{
     width: 100%;
     max-width: 70rem;
 }
-.elastic figure >img{
+.elastic figure >img, #pluginElastique  figure > img{
     max-width: 70rem;
     width: 100%;
 }

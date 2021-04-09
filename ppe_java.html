@@ -12,26 +12,28 @@
         <h1>PPE - Gestion du personnel des ligues</h1>
     </header>
     <main>
+
         <section>
             <h2>Presentation du projet</h2>
             <p>Un des responsables de la M2L, utilise une application pour gérer les employés des ligues. Cette application, très simple, n’existe qu’en ligne de commande et est mono-utilisateur. Nous souhaiterions désigner un administrateur par ligue et lui confier la tâche de recenser les employés de sa ligue.</p>
         </section>
 
+
         <section id="besoins">
             <h2>Spécification du besoin</h2>
             <ul>
-                <li>Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture. </li>
-                <li>Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau.</li>
-                <li>Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande. </li>
-                <li>L’application doit être rendue multi-utilisateurs grace à l’utilisation d’une base de données. </li>
-                <li></li>
+                <li>1) Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture. </li>
+                <li>2) Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau.</li>
+                <li>3) Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande. </li>
+                <li>4) L’application doit être rendue multi-utilisateurs grace à l’utilisation d’une base de données. </li>
             </ul>
+            <ul>
+                <li><a href="https://github.com/Zaira-Zaira/personnel">Lien github</a></li>
+                <li><a href="https://github.com/Zaira-Zaira/ppe_personnel_documentation">PPE Personnel - documentation</a></li>
+            </ul>
+            <img src="./asset/mcd_ppe.png" alt="mcd" class="mcd">
         </section>
 
-
-        <section id="iteration_1">
-              <img src="./asset/mcd_ppe.png" alt="mcd" class="mcd">
-        </section>
 
 
         <section id="test_unitaires">
@@ -89,6 +91,8 @@
             <img src="./asset/commandLine.png" alt="commandLine menu Employés">
         </section>
 
+
+
         <section id="iteration3">
             <h2>Iteration 3</h2>
             <h3>Création d’une classe fille de Passerelle permettant de gérer la connexion à la base de données avec JDBC </h3>
@@ -97,6 +101,8 @@
             <p>Class Credentials permettant gérer la connexion à la base de données </p>
             <img src="./asset/Credentials.png" alt=" fichier credentials java " class="photoCredentials">
         </section>
+
+
 
         <section id="interfaceGraphique">
             <h3>Modélisation de l’interface graphique avec des maquettes. </h3>
@@ -108,14 +114,14 @@
             <p><a href="asset/Interface_graphique(2).pdf" download>Télécharger la modélisation de l'interface graphique ici</a></p>
         </section>
 
-        <!-- <section>
-            <h3>Création d’une interface graphique (Swing ou JavaFx) pour que les administrateurs puissent gérer les ligues. </h3>
-        </section> -->
 
+        
         <section id="rootAdmin">
             <h3>Si une ligue n’a pas d’administrateur, c’est automatiquement le root qui devient l’administrateur de la ligue</h3>
             <img src="./asset/set_admin.png" alt="set administrateur code source">
         </section>
+
+
 
         <footer>
             <p>MIT - Khagabanova Zaira - 2021</p>
