@@ -143,6 +143,11 @@ text-align: left;
 #interfaceGraphique > p{
      padding: 5rem 0 5rem 0;
 }
+#interfaceGraphique ul li > img{
+    width: 30rem;
+    height: 25rem;
+    padding: 1.5rem;
+}
 #rootAdmin > img{
     width: 100%;
     max-width: 70rem;
@@ -155,6 +160,20 @@ footer > p{
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.interface > h3{
+    margin-top: 2rem;
+}
+.interface  ul, #interfaceGraphique ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.0rem;
+}
+.interface ul li  > img{
+     width: 30rem;
+     /* max-width: 30rem; */
+     max-height: 25rem;
+     padding: 2.5rem;
 }
 
 @media screen and (max-width:740px){

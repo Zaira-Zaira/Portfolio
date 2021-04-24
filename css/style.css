@@ -475,6 +475,9 @@ h4{
         display: flex;
         flex-direction: column;
     }
+    .navbar{
+        display: none;
+    }
 }
                             
                 

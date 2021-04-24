@@ -1,14 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PPE Géstion des clients</title>
+    <link rel="stylesheet" href="./css/ppe.css">
 </head>
 <body>
     <header>
-        <h1>PPE PHP</h1>
+        <h1>PPE Géstion des clients</h1>
     </header>
+
+    <main>
+       <section id="presentation">
+          <h2>Présentation du projet</h2>
+          <p>Cette partie de site admin a pour but de permettre aux administrateurs des
+            Maisons des ligues, de recenser leurs clients. Pour ce faire, il faut créer une
+            interface admin qui permet d’ajouter un client, modifier sont profile ou le
+            supprimer.</p>
+            <a href="https://github.com/Zaira-Zaira/ppe_gestion_clients">Lien github du projet</a>
+       </section>
+
+       <section>
+           <h2>Spécification du besoin</h2>
+           <ul>
+               <li>Un administrateur de la ligue a la possibilité de gérer des clients de sa ligue. Il sera possible d'ajouter un client, de mettre 
+                   à jour les données d'un client ou de le
+                   supprimer
+               </li>
+               <li>Coté publication la mission consiste à  afficher l’identifiant, le nom, prénom, age et email et deux liens pour pouvoir mettre à jour les
+                données d'un client et de le supprimer</li>
+           </ul>
+
+           <figure>
+            <img src="./asset/maison_des_ligues.png" alt="interface clients">
+            <figcaption>
+                <p>Voici le résultat attendu de l'interface d'admin</p>
+            </figcaption>
+           </figure>
+       </section>
+
+       <section>
+           <h2>Formulaire ajouter un client</h2>
+           <figure>
+            <img src="./asset/formulaire.png" alt="formulaire ajouter un client">
+            <figcaption>
+                <p>Pour les enregistrements à publier il
+                    faut créer une page avec un formulaire de 4 champs : Nom, Prénom, Age et
+                    adresse mail. Tous les champs sont obligatoires. Afficher un warning dans le cas ou
+                    l’administrateur ne renseigne pas un champ.</p>
+            </figcaption>
+           </figure>
+       </section>
+
+
+       <section>
+           <h2>Mettre à jour et supprimer un client</h2>
+           <img src="./asset/update_delete.png" alt="update and delete one client">
+       </section>
+
+
+       <section>
+           <h2>Aspect technique</h2>
+           <ul>
+               <li>1)Les technologies autorisées sont : html5 css3 et php orienté objet
+               <li>2)Police de caractères : ‘Open Sans’, sans-serif</li>
+               <li>3)Couleur des boutons : #09599A(blue), #00614E(vert) et #d63031(rouge)
+                    La couleur des thèmes doivent être indexée dans des variables css</li>
+               <li>4)Utilisez Visual Studio Code et phpMyAdmin pour la bdd </li>
+               <li>5)Le code HTML généré doit être valide selon les normes du W3C et tester
+                     également pour les spécificités de la WAI et du WCAG (accessibilité)
+              </li>
+              <li>6)Le rendu doit être publié sur un dépôt Github. Celui-ci doit avoir une
+                    structure logique, contenir un readme.md avec présentation du projet et
+                    un fichier « .gitignore » si besoin</li>
+           </ul>
+       </section>
+
+       <section>
+           <h2>Modélisation d'une base de données avec un MCD</h2>
+           <img src="./asset/mcd_client.png" alt="mcd clients">
+           <h2>Création d'une base de données</h2>
+           <img src="" alt="">
+       </section>
+    </main>
 </body>
 </html>
